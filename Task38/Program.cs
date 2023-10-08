@@ -8,9 +8,6 @@ for (int i = 0; i < num.Length; i++)
 }
 Console.Write("] => ");
 
-double diff = FindDiff(num);
-Console.WriteLine("{0:F2}", diff);
-
 double[] GenerateRandomNumbers(int arraySize)
 {
     Random rand = new Random();
@@ -46,3 +43,5 @@ double FindDiff(double[] num)
     return diff;
 }
 
+double diff = FindDiff(num);
+Console.WriteLine("{0:F2}", diff);
